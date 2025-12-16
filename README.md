@@ -1,91 +1,91 @@
-# 🚀 PROXIMA MISSION | Spaceport America Cup Repo
+# 🚀 PROXIMA GÖREVİ | Spaceport America Cup Reposu
 
-![Banner](https://img.shields.io/badge/Mission-PROXIMA-orange?style=for-the-badge) ![Competition](https://img.shields.io/badge/Competition-Spaceport_America_Cup-blue?style=for-the-badge) ![Location](https://img.shields.io/badge/Launch_Site-New_Mexico_USA-red?style=for-the-badge) ![Status](https://img.shields.io/badge/Status-Active_Development-green?style=for-the-badge)
+![Banner](https://img.shields.io/badge/Görev-PROXIMA-orange?style=for-the-badge) ![Yarışma](https://img.shields.io/badge/Yarışma-Spaceport_America_Cup-blue?style=for-the-badge) ![Konum](https://img.shields.io/badge/Fırlatma_Sahası-New_Mexico_ABD-red?style=for-the-badge) ![Durum](https://img.shields.io/badge/Durum-Geliştirme_Aşamasında-green?style=for-the-badge)
 
-## 🌌 Mission Statement (Görev Tanımı)
-**KTU Gökçen Rocket Team** is engineering the next generation of sounding rockets to compete in the world's largest intercollegiate rocket engineering conference and competition, the **Spaceport America Cup**.
+## 🌌 Görev Tanımı (Mission Statement)
+**KTU Gökçen Roket Takımı**, dünyanın en büyük üniversiteler arası roket mühendisliği konferansı ve yarışması olan **Spaceport America Cup**'ta yarışmak üzere yeni nesil sondaj roketleri tasarlamaktadır.
 
-Our mission is to design, build, and launch a **high-performance launch vehicle** capable of carrying a scientific payload to a target apogee, demonstrating **SRAD (Student Researched and Developed)** excellence in propulsion and avionics.
+Misyonumuz, bilimsel bir faydalı yükü hedef irtifaya taşıyabilen, itki ve aviyonik alanlarında **SRAD (Öğrenci Araştırması ve Geliştirmesi)** mükemmelliğini sergileyen **yüksek performanslı bir fırlatma aracı** tasarlamak, üretmek ve fırlatmaktır.
 
 ---
 
 ## 🏆 Kutsal Kase: IREC Teknik Rapor Referansları
-*"Good artists copy, great artists steal." - Pablo Picasso*
+*"İyi sanatçılar kopyalar, büyük sanatçılar çalar." - Pablo Picasso*
 
 Aşağıdaki raporlar, Spaceport America Cup standartlarını yakalamamız için **incelenmesi zorunlu** kaynaklardır.
 
-### 🚀 30,000 ft (Advanced Class)
-> *Complex aerodynamics, supersonic flight profiles, and multi-stage architectures.*
+### 🚀 30,000 ft (İleri Kategori)
+> *Karmaşık aerodinamik, süpersonik uçuş profilleri ve çok kademeli mimariler.*
 *   **[McGill Rocket Team - Stella II (2018)](https://www.mcgillrocketteam.com/)** - *Kompozit Gövde & Aviyonik*
-*   **[Waterloo Rocketry - Kraken of the Sky (2022)](https://waterloorocketry.com/)** - *Hybrid Motor & SRAD Sistemler*
+*   **[Waterloo Rocketry - Kraken of the Sky (2022)](https://waterloorocketry.com/)** - *Hibrit Motor & SRAD Sistemler*
 *   **[Waterloo Rocketry - Shark of the Sky (2019)](https://waterloorocketry.com/)** - *Yüksek İrtifa Tasarımı*
 
-### 🛸 10,000 ft (Intermediate Class)
-> *Precision landing, COTS propulsion mastery, and payload integration.*
+### 🛸 10,000 ft (Orta Kategori)
+> *Hassas iniş, COTS (Hazır) motor ustalığı ve faydalı yük entegrasyonu.*
 *   **[McGill Rocket Team - Project Blanche (2018)](https://www.mcgillrocketteam.com/)** - *COTS Entegrasyon & Kurtarma*
-*   **[Texas A&M SRT - Telemachus (2024)](https://tamusrt.org/)** - *Sentetik Açıklıklı Radar (SAR) Payload*
+*   **[Texas A&M SRT - Telemachus (2024)](https://tamusrt.org/)** - *Sentetik Açıklıklı Radar (SAR) Faydalı Yükü*
 *   **[Texas A&M SRT - Daedalus (2017)](https://tamusrt.org/)** - *10k Hibrit Motor Başarısı*
 *   **[Waterloo Rocketry - Vidar III (2017)](https://waterloorocketry.com/)** - *SRAD Hibrit Başlangıcı*
 
-### 🧪 Experimental & SRAD Technologies
-> *Pushing the envelope with custom propulsion and innovative materials.*
+### 🧪 Deneysel & SRAD Teknolojiler
+> *Özel itki sistemleri ve yenilikçi malzemelerle sınırları zorlamak.*
 *   **[Waterloo Rocketry - Unexploded Ordnance (2018)](https://waterloorocketry.com/)** - *Kismet Hibrit Motor Serisi*
-*   **[Clemson University - IREC 2024 Report](https://cecas.clemson.edu/rocket-engineering/)** - *Süreç Yönetimi ve Mühendislik Disiplini*
-*   **[Clemson University Archives (2022-2023)](https://cecas.clemson.edu/rocket-engineering/)**
+*   **[Clemson University - IREC 2024 Raporu](https://cecas.clemson.edu/rocket-engineering/)** - *Süreç Yönetimi ve Mühendislik Disiplini*
+*   **[Clemson University Arşivi (2022-2023)](https://cecas.clemson.edu/rocket-engineering/)**
 
 ---
 
-## 📂 Repository Structure (Repo Yapısı)
-This repository is organized to mirror the **ESRA** deliverable timeline.
+## 📂 Repo Yapısı (Repository Structure)
+Bu repo, **ESRA** teslimat zaman çizelgesini yansıtacak şekilde düzenlenmiştir.
 
-| Directory | Description | ESRA Deliverable |
+| Dizin | Açıklama | ESRA Teslimatı |
 | :--- | :--- | :--- |
-| **`docs/01_Milestones_&_Updates`** | Progress updates and major design review presentations. | **PDR, CDR** |
-| **`docs/02_Technical_Report`** | The "Holy Grail". Detailed documentation of every system. | **Technical Report** |
-| **`docs/03_Safety_&_SRAD`** | Risk assessment, hazard analysis, and operational checklists. | **Safety Documentation** |
-| **`docs/04_Subsystems_&_Payload`** | Deep dives into Avionics, Propulsion, Aerostructures, and Recovery. | **Design Documents** |
-| **`analysis/`** | Python scripts (RocketPy), OpenRocket files, and CFD results. | **Flight Analysis** |
+| **`docs/01_Milestones_&_Updates`** | İlerleme güncellemeleri ve büyük tasarım gözden geçirme sunumları. | **PDR, CDR** |
+| **`docs/02_Technical_Report`** | "Kutsal Kase". Her sistemin detaylı dökümantasyonu. | **Teknik Rapor** |
+| **`docs/03_Safety_&_SRAD`** | Risk değerlendirmesi, tehlike analizi ve operasyonel kontrol listeleri. | **Güvenlik Dökümanları** |
+| **`docs/04_Subsystems_&_Payload`** | Aviyonik, İtki, Yapısal ve Kurtarma sistemlerine derinlemesine bakış. | **Tasarım Dökümanları** |
+| **`analysis/`** | Python betikleri (RocketPy), OpenRocket dosyaları ve CFD sonuçları. | **Uçuş Analizi** |
 
 ---
 
-## 🛠️ Tech Stack & Analysis Tools
+## 🛠️ Teknoloji Yığını & Analiz Araçları
 
 > [!TIP]
-> **Simulation First:** We do not fly what we cannot simulate.
+> **Önce Simülasyon:** Simüle edemediğimiz hiçbir şeyi uçurmayız.
 
-*   **Trajectory:** [OpenRocket](https://openrocket.info/), [RocketPy](https://github.com/RocketPy-Team/RocketPy)
+*   **Yörünge:** [OpenRocket](https://openrocket.info/), [RocketPy](https://github.com/RocketPy-Team/RocketPy)
 *   **CAD/CFD:** SolidWorks, Ansys Fluent
-*   **PCB Design:** Altium Designer / KiCad
-*   **Programming:** Python, C++ (Embedded)
+*   **PCB Tasarımı:** Altium Designer / KiCad
+*   **Yazılım:** Python, C++ (Gömülü)
 
 ---
 
-## 📅 Roadmap to Spaceport
+## 📅 Spaceport Yol Haritası
 
 ```mermaid
 gantt
-    title IREC 2026 Campaign Timeline
+    title IREC 2026 Kampanya Zaman Çizelges
     dateFormat  YYYY-MM-DD
     axisFormat  %b %Y
 
-    section Planning
-    Concept Definition      :active,    des1, 2025-10-01, 30d
-    PDR (Preliminary Design):           des2, after des1, 45d
+    section Planlama
+    Konsept Belirleme       :active,    des1, 2025-10-01, 30d
+    PDR (Ön Tasarım)        :           des2, after des1, 45d
 
-    section Development
-    Prototyping & SRAD Test :           dev1, after des2, 90d
-    CDR (Critical Design)   :           dev2, after dev1, 30d
+    section Geliştirme
+    Prototip & SRAD Test    :           dev1, after des2, 90d
+    CDR (Kritik Tasarım)    :           dev2, after dev1, 30d
 
-    section Testing
-    Full Integration Test   :           tst1, after dev2, 45d
-    Flight Readiness Review :           tst2, after tst1, 15d
+    section Test
+    Tam Entegrasyon Testi   :           tst1, after dev2, 45d
+    Uçuşa Hazırlık Gözden Geçirme :     tst2, after tst1, 15d
 
-    section Launch
+    section Fırlatma
     Spaceport America Cup   :crit,      launch, 2026-06-15, 7d
 ```
 
-## 🤝 Contributing
-See `CONTRIBUTING.md` for guidelines on how to propose changes, report bugs, and submit Pull Requests. We follow a strict **"Branch per Feature"** workflow.
+## 🤝 Katkıda Bulunma
+Değişiklik önerme, hata bildirme ve Pull Request gönderme yönergeleri için `CONTRIBUTING.md` dosyasına bakın. Katı bir **"Özellik Başına Dal (Branch per Feature)"** iş akışı izliyoruz.
 
 ---
-*Created with ❤️ by KTU Gökçen Rocket Team*
+*KTU Gökçen Roket Takımı tarafından ❤️ ile oluşturuldu*
