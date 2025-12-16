@@ -1,7 +1,0 @@
-
-
-
-    $('#open_mobile_menu').smobileMenu({
-        dropdown: true,
-        getMenu: '#menu'
-    });

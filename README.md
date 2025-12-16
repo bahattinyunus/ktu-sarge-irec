@@ -1,127 +1,126 @@
-﻿﻿<div align="center">
-  <img src="assets/project_banner.png" alt="Gökçen Rocket Team Banner" width="100%" />
+<div align="center">
+  <img src="assets/project_banner.png" alt="Gökçen Roket Takımı Banner" width="100%" />
   <br><br>
-  <img src="assets/university_logo.png" alt="University Logo" width="80" />
-  <img src="assets/teknofest_logo.png" alt="IREC Logo" width="80" /> <!-- Placeholder for IREC/ESRA logo if needed later -->
+  <img src="assets/university_logo.png" alt="Üniversite Logosu" width="80" />
+  <img src="assets/teknofest_logo.png" alt="IREC Logosu" width="80" />
 
-  # 📋 Spaceport America Cup (IREC) 2026 - Project Documentation
-  ### Karadeniz Technical University - Gökçen Rocket Team
+  # 📋 Spaceport America Cup (IREC) 2026 - Proje Dokümantasyonu
+  ### Karadeniz Teknik Üniversitesi - Gökçen Roket Takımı
 
-  [![](https://img.shields.io/badge/Competition-IREC%202026-blue?style=for-the-badge&logo=rocket)](https://www.soundingrocket.org/)
-  [![](https://img.shields.io/github/actions/workflow/status/bahattinyunus/ktu-rocket-irec/lint.yml?style=for-the-badge&label=Build&logo=github)](https://github.com/bahattinyunus/ktu-rocket-irec/actions)
-  [![](https://img.shields.io/badge/Status-Active%20Development-green?style=for-the-badge)](https://www.soundingrocket.org/)
-  [![](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+  [![](https://img.shields.io/badge/Yarışma-IREC%202026-blue?style=for-the-badge&logo=rocket)](https://www.soundingrocket.org/)
+  [![](https://img.shields.io/github/actions/workflow/status/bahattinyunus/ktu-rocket-irec/lint.yml?style=for-the-badge&label=Derleme&logo=github)](https://github.com/bahattinyunus/ktu-rocket-irec/actions)
+  [![](https://img.shields.io/badge/Durum-Aktif%20Geliştirme-green?style=for-the-badge)](https://www.soundingrocket.org/)
+  [![](https://img.shields.io/badge/Lisans-MIT-green?style=for-the-badge)](LICENSE)
 
   <br>
 
-  **"Engineering the future, aiming for the stars in the New Mexico desert."**
+  **"Geleceği mühendislikle inşa ediyoruz, New Mexico çöllerinde yıldızları hedefliyoruz."**
 
 </div>
 
 ---
 
-## 📚 Resources & References
+## 📚 Kaynaklar ve Referanslar
 
-| 🇹🇷 Local References | 🌍 IREC & International Resources |
+| 🇹🇷 Yerel Kaynaklar | 🌍 IREC & Uluslararası Kaynaklar |
 | :--- | :--- |
-| • [Gökçen Legacy Reports](pass_reports/)<br>• [Teknofest Archive](https://teknofest.org/tr/) | • **[ESRA (Exp. Sounding Rocket Assoc.)](https://www.soundingrocket.org/)**<br>• [RocketPy](https://github.com/RocketPy-Team/RocketPy)<br>• [OpenRocket](https://github.com/openrocket/openrocket)<br>• [Nakka Rocketry](https://www.nakka-rocketry.net/)<br>• [Apogee Rockets](https://www.apogeerockets.com/) |
+| • [Gökçen Geçmiş Raporlar](pass_reports/)<br>• [Teknofest Arşivi](https://teknofest.org/tr/) | • **[ESRA (Exp. Sounding Rocket Assoc.)](https://www.soundingrocket.org/)**<br>• [RocketPy](https://github.com/RocketPy-Team/RocketPy)<br>• [OpenRocket](https://github.com/openrocket/openrocket)<br>• [Nakka Rocketry](https://www.nakka-rocketry.net/)<br>• [Apogee Rockets](https://www.apogeerockets.com/) |
 
 ---
 
 > [!IMPORTANT]
-> **📢 Team Announcement**
+> **📢 Takım Duyurusu**
 >
-> 1.  **Access:** To contribute, ask for "Collaborator" access or open a Pull Request.
-> 2.  **Report Analysis:** Please check `past_reports` for previous IREC technical papers.
-> 3.  **Language:** Primary documentation language is **English** (IREC requirement), but internal notes can be in Turkish.
+> 1.  **Erişim:** Katkıda bulunmak için "Collaborator" yetkisi isteyin veya Pull Request açın.
+> 2.  **Rapor Analizi:** Lütfen `pass_reports` klasöründeki eski IREC teknik makalelerini inceleyin.
+> 3.  **Dil:** Yarışma gereği ana raporlama dili **İngilizce**'dir, ancak bu repo içindeki çalışma notları ve kılavuzlar **Türkçe** olabilir.
 
 ---
 
-## 🛠️ Technology Stack
+## 🛠️ Teknoloji Yığını
 <div align="center">
 
-![OpenRocket](https://img.shields.io/badge/OpenRocket-Design-blue?style=for-the-badge&logo=rocket)
+![OpenRocket](https://img.shields.io/badge/OpenRocket-Tasarım-blue?style=for-the-badge&logo=rocket)
 ![Ansys](https://img.shields.io/badge/Ansys-CFD-yellow?style=for-the-badge&logo=ansys)
 ![SolidWorks](https://img.shields.io/badge/SolidWorks-CAD-red?style=for-the-badge&logo=dassaultsystèmes)
-![STM32](https://img.shields.io/badge/STM32-Avionics-green?style=for-the-badge&logo=stmicroelectronics)
+![STM32](https://img.shields.io/badge/STM32-Aviyonik-green?style=for-the-badge&logo=stmicroelectronics)
 ![Python](https://img.shields.io/badge/Python-Scripting-blue?style=for-the-badge&logo=python)
-![GitHub](https://img.shields.io/badge/GitHub-Collaboration-181717?style=for-the-badge&logo=github)
+![GitHub](https://img.shields.io/badge/GitHub-İşbirliği-181717?style=for-the-badge&logo=github)
 
 </div>
 
 ---
 
-## 📌 Repository Purpose
-This repository serves as the central hub for **Karadeniz Technical University Gökçen Rocket Team**'s participation in the **2026 Spaceport America Cup (IREC)**. It contains all design documents, analysis reports, flight simulations, and avionics software codes.
+## 📌 Depo Amacı
+Bu repo, **KTÜ Gökçen Roket Takımı**'nın **2026 Spaceport America Cup (IREC)** katılımı için merkezi çalışma alanıdır. Tüm tasarım belgeleri, analiz raporları, uçuş simülasyonları ve aviyonik yazılımları burada barındırılır.
 
 ---
 
-## 🚀 About Spaceport America Cup (IREC)
+## 🚀 Spaceport America Cup (IREC) Hakkında
 
-The **Spaceport America Cup** is the world's largest intercollegiate rocket engineering conference and competition, held annually in New Mexico, USA.
+**Spaceport America Cup**, her yıl New Mexico, ABD'de düzenlenen dünyanın en büyük üniversiteler arası roket mühendisliği konferansı ve yarışmasıdır.
 
-### 🏆 Categories
-Our team is targeting the following category:
-*   **Target Altitude:** 10,000 ft (AGL) or 30,000 ft (AGL)
-*   **Propulsion Type:** COTS (Commercial Off-The-Shelf) or SRAD (Student Researched and Developed)
-*   **Current Target:** **10,000 ft - COTS Solid Motor** (Preliminary Decision)
+### 🏆 Kategoriler
+Takımımız şu kategoriyi hedeflemektedir:
+*   **Hedef İrtifa:** 10,000 ft (AGL) veya 30,000 ft (AGL)
+*   **İtki Tipi:** COTS (Hazır Ticari Motor) veya SRAD (Öğrenci Araştırma ve Geliştirme)
+*   **Mevcut Hedef:** **10,000 ft - COTS Katı Yakıtlı Motor** (Ön Karar)
 
-### 📝 Timeline (IREC 2026)
-The competition requires strict adherence to the ESRA timeline:
+### 📝 Zaman Çizelgesi (IREC 2026)
+Yarışma, ESRA takvimine sıkı sıkıya bağlılık gerektirir:
 
 ```mermaid
 timeline
-    title IREC 2026 Season
-    2025 Oct : Application & Proposal
-    2025 Dec : First Progress Update
-    2026 Mar : Technical Report Entry
-    2026 May : Flight Readiness Review (FRR)
-    2026 June : SPACEPORT AMERICA CUP (Launch Week) 🚀
+    title IREC 2026 Sezonu
+    2025 Ekim : Başvuru & Öneri
+    2025 Aralık : 1. İlerleme Raporu (PDR)
+    2026 Şubat : 2. İlerleme Raporu (CDR)
+    2026 Mart : Teknik Rapor Girişi
+    2026 Mayıs : Uçuş Hazırlık İncelemesi (FRR)
+    2026 Haziran : SPACEPORT AMERICA CUP (Fırlatma Haftası) 🚀
 ```
 
-### 🎯 Scoring Criteria
-*   **Project Technical Report:** 500 Points (Design correctness, analysis, safety).
-*   **Flight Performance:** 500 Points (Altitude accuracy, recovery success, payload mission).
-*   **Bonus:** Sportsmanship, Team Spirit, SRAD components.
+### 🎯 Puanlama Kriterleri
+*   **Proje Teknik Raporu:** 500 Puan (Tasarım doğruluğu, analiz, güvenlik).
+*   **Uçuş Performansı:** 500 Puan (İrtifa doğruluğu, kurtarma başarısı, faydalı yük görevi).
+*   **Bonus:** Sportiflik, Takım Ruhu, SRAD bileşenler.
 
 ---
 
-## 📂 Documentation Structure (IREC Standard)
+## 📂 Dokümantasyon Yapısı (IREC Standardı)
 
 ```plaintext
-├── 📂 assets              # Images, banners, logos
-├── 📂 docs                # 🧠 Technical Documentation
-│   ├── 📂 esra_docs       # IREC specific documents (Rules, Updates)
-│   ├── 📂 analysis        # 🧮 CFD, FEA, Trajectory Analysis
-│   ├── 📂 avionics        # ⚡ Circuit diagrams, PCB layouts
-│   ├── 📂 recovery        # 🪂 Parachute sizing, drift analysis
-│   ├── 📂 propulsion      # 🔥 Motor selection / SRAD design
-│   ├── 📂 payload         # 📦 Scientific Payload details
-│   └── 📂 safety          # ⚠️ Risk Assessment & Checklists
-├── 📂 flight_data         # 📡 Telemetry logs & Simulation files (OpenRocket/RasAero)
-├── 📜 CITATION.cff        # Academic citation
-├── 📜 README.md           # Main project file
-└── 📜 LICENSE             # MIT License
+├── 📂 assets              # Görseller, bannerlar, logolar
+├── 📂 docs                # 🧠 Teknik Dokümantasyon
+│   ├── 📂 00_admin                  # 📅 Bütçe, Takım Listesi, ESRA İletişimleri
+│   ├── 📂 01_progress_updates       # 📝 PDR, CDR, Uçuş Hazırlık İncelemeleri
+│   ├── 📂 02_technical_report       # 📄 Final Proje Teknik Raporu
+│   ├── 📂 03_safety_and_operations  # ⚠️ Tehlike Analizi & Fırlatma Kontrol Listeleri
+│   └── 📂 04_subsystems             # 🛠️ Tasarım & Analiz (İtki, Aviyonik...)
+├── 📂 flight_data         # 📡 Telemetry logları & Simülasyon dosyaları (OpenRocket/RasAero)
+├── 📜 CITATION.cff        # Akademik atıf
+├── 📜 README.md           # Ana proje dosyası
+└── 📜 LICENSE             # MIT Lisansı
 ```
 
-### 📋 Key Documents
-*   [🚀 Launch Operations Checklist](docs/safety/checklist_launch.md)
-*   [⚠️ Risk Assessment](docs/safety/risk_assessment.md)
-*   [📄 Technical Report Draft](docs/esra_docs/technical_report_draft.md)
+### 📋 Önemli Belgeler
+*   [🚀 Fırlatma Operasyon Kontrol Listesi](docs/03_safety_and_operations/launch_checklist.md)
+*   [⚠️ Risk Değerlendirmesi](docs/03_safety_and_operations/risk_assessment.md)
+*   [📄 Teknik Rapor Taslağı](docs/02_technical_report/README.md)
 
 ---
 
-## 🤝 Contributing & Workflow
-1.  **Weekly Meetings:** Sundays at 20:00.
-2.  **Documentation:** All engineering decisions must be documented in `docs/` with justifications.
-3.  **Units:** All documents must use **Imperial & Metric** units (IREC requirement).
+## 🤝 Katkıda Bulunma & İş Akışı
+1.  **Haftalık Toplantılar:** Pazar günleri saat 20:00.
+2.  **Belgeleme:** Tüm mühendislik kararları gerekçeleriyle birlikte `docs/` altında belgelenmelidir.
+3.  **Birimler:** Tüm belgeler **Imperial & Metric** birimlerini (IREC gereksinimi) kullanmalıdır.
 
 ---
 
-## 📞 Contact
-*   **Team Lead:** [Name Surname] (email@ktu.edu.tr)
-*   **Faculty Advisor:** [Title Name Surname]
+## 📞 İletişim
+*   **Takım Kaptanı:** [İsim Soyisim] (email@ktu.edu.tr)
+*   **Akademik Danışman:** [Ünvan İsim Soyisim]
 
 <div align="center">
-  <p>© 2026 Karadeniz Technical University - Gökçen Rocket Team</p>
+  <p>© 2026 Karadeniz Teknik Üniversitesi - Gökçen Roket Takımı</p>
 </div>
