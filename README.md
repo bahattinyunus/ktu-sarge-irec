@@ -3,7 +3,7 @@
 ![Banner](docs/assets/banner.png)
 
 > **"Mükemmellik bir eylem değil, bir alışkanlıktır."**
-> Bu depo, KTÜ Gökçen Roket Takımı'nın Spaceport America Cup (IREC) 30k SRAD kategorisi için geliştirdiği "Proxima" roketinin teknik dokümantasyonunu ve mühendislik araçlarını içerir.
+> Bu depo, KTÜ Gökçen Roket Takımı'nın Spaceport America Cup (IREC) 30k SRAD kategorisi için geliştirdiği "Proxima" roketinin teknik dokümantasyonunu, mühendislik analizlerini ve operasyonel prosedürlerini içerir.
 
 <div align="center">
 
@@ -15,24 +15,7 @@
 
 ---
 
-## 📋 1. PROJE VE GÖREV TANIMI (Mission Definition)
-**Proje Adı:** Proxima
-**Yarışma:** Spaceport America Cup (IREC)
-**Konum:** New Mexico, ABD
-**Hedef:** 4 kg (8.8 lb) bilimsel faydalı yükü 30,000 ft irtifaya taşımak ve güvenli bir şekilde kurtarmak.
-
-### 🏆 Yarışma Kategorisi: 30k SRAD
-Takımımız, yarışmanın en zorlu ve prestijli kategorisi olan **30,000 ft - Student Researched and Developed (SRAD)** kategorisinde yarışmaktadır.
-
-| Parametre | Değer | Açıklama |
-| :--- | :--- | :--- |
-| **Hedef İrtifa** | 30,000 ft (AGL) | Yaklaşık 9,144 metre. |
-| **Motor Tipi** | SRAD (Öğrenci Yapımı) | Hibrit veya Katı Yakıtlı motor tasarımı ve üretimi tamamen takıma aittir. |
-| **Faydalı Yük** | 4 kg (Min) | 3U CubeSat form faktöründe bilimsel deney. |
-
----
-
-## 📂 2. DOKÜMANTASYON VE NAVİGASYON REHBERİ
+## 📂 0. DOKÜMANTASYON VE NAVİGASYON REHBERİ
 Bu repo, binlerce satır kod ve teknik dokümandan oluşur. Aradığınızı bulmanız için rehber:
 
 | Belge | Fragman (İçerik Özeti) | Erişim |
@@ -46,44 +29,139 @@ Bu repo, binlerce satır kod ve teknik dokümandan oluşur. Aradığınızı bul
 
 ---
 
-## ⚖️ 3. MÜHENDİSLİK İLKELERİ (Core Principles)
-Bu proje, havacılık ve uzay endüstrisi standartlarına (NASA/ESA) uygun olarak yürütülmektedir.
+## 📋 1. MİSYON PROFİLİ (Mission Profile)
+**Proje Adı:** Proxima
+**Yarışma:** Spaceport America Cup (IREC) - 30k SRAD
+**Konum:** Spaceport America, New Mexico, ABD
+**Hedef:** 4 kg (8.8 lb) bilimsel faydalı yükü tam 30,000 ft (9,144m) irtifaya çıkarmak ve güvenli bir şekilde kurtarmak.
 
-1.  **Veri Odaklı Karar Alma:** Tüm tasarım kararları; simülasyon, analiz ve test verilerine dayanır. "Tahmin" değil, "Doğrulama" esastır.
-2.  **Önce Güvenlik (Safety First):** Havacılık kuralları tavizsiz uygulanır. Kritik sistemlerde yedeklilik (redundancy) zorunludur.
-3.  **Dokümantasyon:** Yapılan her test, tasarım ve analiz yazılı olarak kayıt altına alınır. İzlenebilirlik (Traceability) esastır.
-4.  **Risk Yönetimi:** Olası tüm hata senaryoları önceden analiz edilir (FMEA) ve önleyici tedbirler alınır.
-
----
-
-## 📐 3. SİSTEM MİMARİSİ VE METODOLOJİ
-Proje, **Design-Build-Fly** döngüsü ve **V-Model** sistem mühendisliği yaklaşımı ile yönetilir.
-
-### Alt Sistem Etkileşim Şeması
-```mermaid
-graph TD
-    subgraph "🚀 FLIGHT VEHICLE"
-        Avionics[🧠 AVİYONİK: Uçuş Bilgisayarı]
-        Prop[🔥 İTKİ: SRAD Motor]
-        Aero[🏗️ YAPISAL: Gövde ve Kanatçıklar]
-        Rec[🪂 KURTARMA: Paraşüt Sistemi]
-    end
-
-    Avionics -->|Ateşleme Sinyali| Prop
-    Prop -->|İtki Kuvveti| Aero
-    Avionics -->|Ayrılma Sinyali| Rec
-    Rec -->|Sürüklenme Kuvveti| Aero
-    Aero -->|Titreşim Verisi| Avionics
-```
-
-### Geliştirme Süreci
-*   **Tasarım (Design):** SolidWorks (CAD), OpenRocket/RASAero (Simülasyon), Altium (PCB).
-*   **Üretim (Build):** Kompozit sarım (Filament Winding), CNC işleme, 3D baskı (PETG/Nylon).
-*   **Test & Uçuş (Fly):** Statik Ateşleme Testleri, HIL (Hardware-in-the-Loop) simülasyonları, Test uçuşları.
+### Temel Performans Parametreleri (KPI)
+| Parametre | Hedef Değer | Tolerans |
+| :--- | :--- | :--- |
+| **Apogee** | 30,000 ft AGL | ±%10 |
+| **Max Hız** | Mach 1.8 | < Mach 2.0 (Termal Limit) |
+| **Max İvme** | 14 G | < 20 G (Elektronik Limiti) |
+| **Statik Marjin** | 2.5 Cal | 2.0 - 4.0 Arası |
+| **İniş Hızı** | 6.5 m/s | < 8.0 m/s (Güvenli İniş) |
 
 ---
 
-## �️ 4. DİJİTAL MÜHENDİSLİK ARAÇLARI (Engineering Tools)
+## 📐 2. MATEMATİKSEL TEMELLER (Mathematical Foundation)
+Tasarımımız "deneme-yanılma" değil, aşağıdaki fizik yasaları üzerine kuruludur.
+
+### 2.1. İtki Denklemi (Propulsion)
+Roketin itkisi ($F$), momentum değişimi ve basınç farkından doğar:
+$$ F = \dot{m} V_e + (P_e - P_a) A_e $$
+*   $\dot{m}$: Kütle debisi (Propellant mass flow rate)
+*   $V_e$: Çıkış hızı (Exhaust velocity)
+*   $P_e$: Çıkış basıncı (Exit pressure)
+*   $P_a$: Atmosfer basıncı (Ambient pressure)
+
+### 2.2. Aerodinamik Stabilite (Stability)
+Roketin stabil uçması için Basınç Merkezi ($C_p$), Ağırlık Merkezi ($C_g$)'nin gerisinde olmalıdır (Barrowman Denklemi):
+$$ Margin = \frac{X_{cp} - X_{cg}}{d_{ref}} \geq 2.0 $$
+Hesaplamalarımızda **Barrowman Metodu** (Subsonic) ve **Nose-Cylinder-Fin Method** (Supersonic) birlikte kullanılmaktadır.
+
+### 2.3. Paraşüt Sürüklenmesi (Recovery)
+İniş hızını ($V$) belirleyen sürüklenme denklemi:
+$$ V = \sqrt{\frac{2mg}{\rho C_d A}} $$
+*   $C_d$: Sürüklenme katsayısı (Hemispherical: 1.5, Elliptical: 2.2)
+*   $A$: Paraşüt alanı
+
+---
+
+## 🔩 3. ALT SİSTEM DETAYLARI (Detailed Subsystems)
+
+### 🧠 A. Aviyonik ve Yazılım (Avionics)
+Sistem, gerçek zamanlı (RTOS) çalışan yedekli bir mimariye sahiptir.
+
+**Durum Makinesi (State Machine Logic):**
+1.  **IDLE:** Sensör kalibrasyonu, GPS Lock bekleniyor.
+2.  **ARMED:** Anahtarlar açık, süreklilik (continuity) tamam. Ateşleme komutu bekleniyor.
+3.  **BOOST (ASCENT):** İvme > 3G algılandı. Loglama başladı. (Active Control kilitli).
+4.  **COAST:** Motor söndü. Apogee tahmini yapılıyor.
+5.  **APOGEE:** Hız < 0 m/s. **Drogue Paraşüt Ateşle.**
+6.  **DESCENT:** Barometre irtifayı izliyor.
+7.  **MAIN DEPLOY:** İrtifa < 1500ft. **Ana Paraşüt Ateşle.**
+8.  **TOUCHDOWN:** Hız ~ 0. GPS konumu gönderiliyor.
+
+**Donanım Özellikleri:**
+| Bileşen | Model / Teknoloji | Açıklama |
+| :--- | :--- | :--- |
+| **Ana İşlemci** | STM32H743ZI | 480 MHz ARM Cortex-M7, Real-Time OS. |
+| **IMU (Sensör)** | Bosch BMI088 | Yüksek G dayanımlı (24g) ivmeölçer. |
+| **Telemetri (RF)** | LoRa SX1276 | 915 MHz, Spread Spectrum, 15km+ menzil. |
+| **PCB Katman** | 4-Layer FR4 | Gürültü izolasyonu için ayrı GND/PWR katmanları. |
+
+### 🔥 B. İtki Sistemi (Propulsion)
+Motorumuz %100 SRAD (Öğrenci Tasarımı) ve M-Sınıfı bir katı yakıtlı motordur.
+
+| Parametre | Değer | Detaylar |
+| :--- | :--- | :--- |
+| **Toplam İtki** | 9,200 Ns | M-Class (%92 Doluluk). |
+| **Yakıt Tipi** | APCP | Ammonium Perchlorate Composite Propellant. |
+| **Formülasyon** | Blue Thunder | %78 Oksitleyici, %16 Binder, %2 Metal (Al). |
+| **Yanma Süresi** | 4.2 saniye | Hızlı ve agresif yanma profili. |
+| **Nozzle Expansion** | 5.4 | Deniz seviyesi ve 30k feet optime edilmiş ortalama. |
+
+### 🏗️ C. Yapısal ve Üretim (Aerostructures)
+Gövde, yüksek mukavemetli kompozit malzemelerden üretilmektedir.
+
+**Kompozit Sarım Planı (Layup Schedule):**
+*   **Gövde Borusu:** `[90/±45/90/±45/90]` (Filament Winding).
+    *   *Amaç:* Burkulma (Buckling) ve iç basınç dayanımı.
+*   **Kanatçıklar:** `[0/90]_4s` Karbon Fiber + 5mm Nomex Petek (Honeycomb) Çekirdek.
+    *   *Amaç:* Flutter dayanımı ve hafiflik.
+
+---
+
+## � 4. ARAYÜZ KONTROL DOKÜMANI (ICD)
+Alt sistemlerin birbirine nasıl bağlandığını tanımlar.
+
+### 4.1. Mekanik Arayüzler
+| Bağlantı | Vida Tipi | Tork Değeri | Notlar |
+| :--- | :--- | :--- | :--- |
+| **Motor - Gövde** | M6 Çelik Cıvata | 12 Nm | Loctite 243 (Mavi) kullanımı zorunlu. |
+| **Fin - Gövde** | M4 Havşa Başlı | 4 Nm | Aerodinamik pürüzsüzlük için. |
+| **Avionics Rayı** | M3 Paslanmaz | 1.5 Nm | Titreşim pulları ile. |
+
+### 4.2. Elektriksel Pin Haritası (Pinout)
+| Pin Adı | Fonksiyon | Bağlantı | Protokol |
+| :--- | :--- | :--- | :--- |
+| **PYRO_1** | Drogue Ateşleme | Mosfet Q1 Gate | 12V 5A Pulse |
+| **PYRO_2** | Main Ateşleme | Mosfet Q2 Gate | 12V 5A Pulse |
+| **UART_TX** | Telemetri Veri | LoRa RX Pin | 115200 Baud |
+| **I2C_SDA** | Sensör Veri | IMU SDA Pin | 400 kHz |
+
+---
+
+## ⏱️ 5. OPERASYON KONSEPTİ (CONOPS)
+Bir fırlatma gününün kronolojisi:
+
+| Zaman (T-) | Olay | Açıklama |
+| :--- | :--- | :--- |
+| **T-24 Saat** | **Readiness Review** | Tüm sistemlerin son kontrolü. Pillerin şarjı. |
+| **T-4 Saat** | **Assembly** | Motor montajı ve rokete entegrasyonu. |
+| **T-1 Saat** | **Pad Loading** | Roketin rampaya yerleştirilmesi ve dikilmesi. |
+| **T-15 Dak** | **Arming** | Aviyonik sistemlerin açılması. GPS Lock kontrolü. |
+| **T-0** | **LIFT OFF** | Ateşleme ve kalkış. (Max Q: T+12s) |
+| **T+ Apogee** | **Drogue Deploy** | Tepe noktasında ilk paraşüt açılır. |
+| **T+ 1500ft** | **Main Deploy** | Ana paraşüt açılır ve yavaş iniş başlar. |
+| **T+ Touchdown** | **Recovery** | Roketin GPS ile bulunması ve veri analizi. |
+
+---
+
+## ✅ 6. TEST VE DOĞRULAMA (Verification & Validation)
+Uçuş öncesi (Pre-Flight) zorunlu test protokolleri:
+
+1.  **Statik Ateşleme (Static Fire):** Motorun yerde ateşlenerek itki eğrisinin doğrulanması.
+2.  **Vakum Testi:** Aviyonik sistemin 30,000 ft basınçsız ortamda çalışıp çalışmadığının testi.
+3.  **Yer Ayrılma Testi (Ejection Test):** Paraşüt barutlarının (Black Powder) gövdeyi ayırmaya yetip yetmediğinin testi.
+4.  **Titreşim (Vibration) Testi:** Vida ve konnektörlerin fırlatma sarsıntısında gevşemediğinin onayı.
+
+---
+
+## 🛠️ 7. DİJİTAL MÜHENDİSLİK ARAÇLARI
 Proje kapsamında geliştirilen özel Python analiz araçları `analysis/` dizininde bulunmaktadır.
 
 **Kurulum:**
@@ -100,41 +178,24 @@ pip install -e .
 
 ---
 
-## ⚠️ 5. RİSK ANALİZİ VE TEKNİK ZORLUKLAR
-Projenin başarısı için aşağıdaki teknik riskler dikkatle yönetilmelidir:
+## 📆 8. PROJE YÖNETİMİ VE TAKVİM
+**Organizasyon Şeması:**
+*   **Project Manager:** Genel Koordinasyon.
+*   **Systems Engineer:** Arayüzler ve Gereksinimler.
+*   **Subsystem Leads:** Avionics, Propulsion, Aerostructures, Payload, Recovery.
 
-<details>
-<summary>� <b>Detaylı Risk Analizini Görüntüle</b> (Tıklayın)</summary>
-
-### 🚩 Yapısal Bütünlük (Structural Integrity)
-*   **Fin Flutter:** Transonik hızlarda kanatçık rezonansı. *Çözüm: Yüksek modüllü karbon fiber kullanımı ve ANSYS modal analiz.*
-*   **Gövde Burkulması:** Yüksek itki altında gövde deformasyonu. *Çözüm: Filament winding tekniği.*
-
-### 🚩 Aviyonik Sistemler
-*   **RF İletişim Kaybı:** Karbon fiber gövdenin sinyali bloke etmesi. *Çözüm: RF şeffaf burun konisi ve harici anten yerleşimi.*
-*   **Pil Güvenliği:** Vakum ortamında Li-Po pil şişmesi. *Çözüm: Basınç testli Li-Ion piller.*
-
-### 🚩 İtki Sistemi
-*   **Termal Erozyon:** Nozzle boğazının erimesi. *Çözüm: Yüksek yoğunluklu grafit malzeme.*
-
-</details>
-
----
-
-## 📚 6. REFERANSLAR VE KAYNAKLAR
-Teknik literatür, geçmiş yıl raporları ve standartlar için kütüphanemizi ziyaret edin:
-
-**� [TÜM KAYNAKLARA GİT (RESOURCES.md)](docs/RESOURCES.md)**
-
-*   **Raporlar:** McGill, Waterloo, Stanford teknik raporları.
-*   **Kitaplar:** *Rocket Propulsion Elements* (Sutton), *Modern High Power Rocketry*.
-*   **Yazılımlar:** OpenRocket, RASAero, BurnSim.
+**Genel Takvim:**
+*   **Eylül - Kasım:** Kavramsal Tasarım (MDR)
+*   **Aralık - Ocak:** Ön Tasarım (PDR)
+*   **Şubat - Mart:** Kritik Tasarım (CDR) ve Prototip
+*   **Nisan:** Üretim ve Yer Testleri
+*   **Mayıs:** Sistem Entegrasyonu ve FRR (Flight Readiness Review)
+*   **Haziran:** **IREC Competition (Launch)**
 
 ---
 
 ## 📞 İLETİŞİM
 Kurumsal iletişim ve sponsorluk için:
-
 *   🌐 **Web:** [gokcenrocket.org](https://gokcenrocket.org)
 *   📧 **E-Posta:** contact@gokcenrocket.org
 *   💼 **LinkedIn:** [linkedin.com/company/ktugokcen](https://linkedin.com/company/ktugokcen)
