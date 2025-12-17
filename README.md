@@ -9,7 +9,7 @@
 
 ![Badge](https://img.shields.io/badge/MISSION-PROXIMA-red?style=for-the-badge) ![Badge](https://img.shields.io/badge/STATUS-FLIGHT_READY-success?style=for-the-badge) ![Badge](https://img.shields.io/badge/TARGET-30%2C000_FT_AGL-blue?style=for-the-badge)
 
-[**📜 MANİFESTO**](ROADMAP.md) • [**� SÖZLÜK**](docs/GLOSSARY.md) • [**🧪 MALZEME**](docs/04_Subsystems_&_Payload/03_Aerostructures/Material_Properties.md) • [**� CHECKLISTS**](docs/03_Safety_&_SRAD/Checklists/) • [**�🛡️ SAVAŞ KURALLARI**](CONTRIBUTING.md)
+[**📜 MANİFESTO**](ROADMAP.md) • [**📚 KAYNAKLAR**](docs/RESOURCES.md) • [**📖 SÖZLÜK**](docs/GLOSSARY.md) • [**🧪 MALZEME**](docs/04_Subsystems_&_Payload/03_Aerostructures/Material_Properties.md) • [**📋 CHECKLISTS**](docs/03_Safety_&_SRAD/Checklists/) • [**🛡️ SAVAŞ KURALLARI**](CONTRIBUTING.md)
 
 </div>
 
@@ -26,7 +26,17 @@ Bu projeye adım atan herkes şu değişmez yasaları kabul eder:
 
 ## 🏛️ 1. MİSYON VE OPERASYON ALANI
 **Konum:** Spaceport America, New Mexico. **Düşman:** $Ma \approx 1.0$ şok dalgaları ve 45°C çöl sıcağı.
-**Hedef:** 4kg faydalı yükü tam 30,000 ft irtifaya çıkarmak ve *tek parça* geri indirmek.
+**Hedef:** 8.8 lb (4 kg) bilimsel faydalı yükü tam 30,000 ft irtifaya çıkarmak ve *tek parça* geri indirmek.
+
+### 🏆 Yarışma Kategorileri (The Categories)
+Spaceport America Cup (IREC), iki ana irtifa ve iki ana itki kategorisine ayrılır. Bizim hedefimiz **30k SRAD**:
+
+| Kategori | İrtifa Hedefi | Motor Tipi | Açıklama |
+| :--- | :--- | :--- | :--- |
+| **10k COTS** | 10,000 ft AGL | Commercial (Hazır) | Başlangıç seviyesi. Hazır motor (Cesaroni, AeroTech) kullanılır. |
+| **10k SRAD** | 10,000 ft AGL | Student R&D (Öğrenci) | Motoru öğrenciler tasarlar ve üretir. |
+| **30k COTS** | 30,000 ft AGL | Commercial (Hazır) | Yüksek irtifa, ancak hazır motor güvenilirliği. |
+| **30k SRAD** | 30,000 ft AGL | Student R&D (Öğrenci) | **En prestijli kategori.** Hem motor hem gövde öğrenci tasarımıdır. *Biz buradayız.* |
 
 ### 📐 Sistem Mimarisi (Architecture)
 Bu roket tek bir vücut gibi çalışır. Alt sistemlerin etkileşimi:
@@ -49,7 +59,26 @@ graph TD
 
 ---
 
-## 💻 2. DIGITAL TOOLBELT (Araç Kutusu)
+## 🧬 2. MÜHENDİSLİK FELSEFESİ (Design-Build-Fly)
+Biz bir "Teknoloji Kulübü" değiliz. Biz bir **Ar-Ge Organizasyonuyuz**.
+
+### 1️⃣ Design (Tasarım)
+*   **CAD:** SolidWorks (Mekanik) ve Altium (PCB) tasarımı bitmeden vida sıkılmaz.
+*   **Simülasyon:** OpenRocket (Subsonic) ve RASAero (Supersonic) simülasyonları %95 doğrulukla yapılmalıdır.
+*   **Review:** PDR (Preliminary Design Review) ve CDR (Critical Design Review) geçmeden üretime başlanmaz.
+
+### 2️⃣ Build (Üretim)
+*   **CNC & Torna:** Parçalar mikron hassasiyetinde işlenir.
+*   **Kompozit:** Karbon fiber sarımı (Filament Winding) vakum altında kürlenir.
+*   **Test:** Statik ateşleme testi (Static Fire) yapılmamış bir motor asla rokete takılmaz.
+
+### 3️⃣ Fly (Uçuş)
+*   **Checklist:** 50 maddelik kontrol listesi, pilotun kutsal kitabıdır.
+*   **Analiz:** Uçuş sonrası SD kart verileri `analysis/` klasöründe Python ile işlenir ve simülasyonla karşılaştırılır.
+
+---
+
+## 💻 3. DIGITAL TOOLBELT (Araç Kutusu)
 "Hesap makinesi kullanmayan mühendis, şairdir." Biz şair değiliz. Repoda gömülü Python araçlarını kullanın.
 
 ### 🛠️ Kurulum (Installation)
